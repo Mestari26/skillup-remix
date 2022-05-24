@@ -1,0 +1,66 @@
+:root {
+  --color-gray-100: #D0D0D0;
+  --color-gray-900: #121212;
+
+  --color-nubisoft-blue: #1BA2C9; /* rgb(27, 162, 201) */
+  --color-nubisoft-green: #52BA8A; /* rgb(82, 186, 138) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', 'sans-serif';
+}
+
+body {
+  color: var(--color-gray-100);
+  background-color: var(--color-gray-900);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.mainWrapper {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+code * {
+  font-family: 'Fira Code';
+}
+
+.mainOutletWrapper {
+  margin-top: 24px;
+  flex: 1;
+  display: flex;
+}
+
+.mainFooter {
+  margin: auto;
+  margin-top: 24px;
+  background: -webkit-linear-gradient(0, var(--color-nubisoft-green), var(--color-nubisoft-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 200;
+}
+
+.nubisoftTextGradient {
+  background: -webkit-linear-gradient(0, var(--color-nubisoft-green), var(--color-nubisoft-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

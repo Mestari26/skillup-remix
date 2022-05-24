@@ -1,0 +1,205 @@
+/* ------------------------------- Navigation ------------------------------- */
+.layoutExampleNavigation {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+
+.layoutExampleNavigationOption {
+  background-color: #232323;
+  padding: 8px 16px;
+  border-radius: 15px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layoutExampleNavigationOption {
+  border: 2px solid white;
+}
+
+.layoutExampleNavigationOption:hover {
+  transform: scale(1.05);
+  cursor: help;
+  color: var(--color-gray-900);
+}
+
+.layoutExampleNavigationOption:nth-of-type(1) {
+  border-color: var(--color-nubisoft-green);
+}
+
+.layoutExampleNavigationOption:nth-of-type(1):hover {
+  background-color: var(--color-nubisoft-green);
+}
+
+.layoutExampleNavigationOption:nth-of-type(2) {
+  border-color: var(--color-nubisoft-blue);
+}
+
+.layoutExampleNavigationOption:nth-of-type(2):hover {
+  background-color: var(--color-nubisoft-blue);
+}
+
+.layoutExampleNavigationOption:nth-of-type(3) {
+  border-color: #e67fff;
+}
+
+.layoutExampleNavigationOption:nth-of-type(3):hover {
+  background-color: #e67fff;
+}
+
+.layoutExampleNavigationOption:nth-of-type(4) {
+  border-color: #FFFC19;
+}
+
+.layoutExampleNavigationOption:nth-of-type(4):hover {
+  background-color: #FFFC19;
+}
+
+/* ----------------------------------- URL ---------------------------------- */
+.layoutExampleURL {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.selectedLayoutPart.rootUrl {
+  color: var(--color-nubisoft-green);
+}
+
+.selectedLayoutPart.salesUrl {
+  color: var(--color-nubisoft-blue);
+}
+
+.selectedLayoutPart.invoicesUrl {
+  color: #e67fff;
+}
+
+.selectedLayoutPart.idInvoiceUrl {
+  color: #FFFC19;
+}
+
+/* ----------------------------- Example Wrapper ---------------------------- */
+.layoutExampleWrapper {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  border: 1px solid var(--color-gray-100);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.layoutExampleWrapper::before, .layoutExampleWrapper *::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.layoutExampleWrapper, .layoutExampleWrapper * {
+  position: relative;
+}
+
+.selectedLayoutPart::before {
+  z-index: 100;
+  opacity: 0.3;
+}
+
+.layoutExampleWrapper.selectedLayoutPart::before {
+  background-color: var(--color-nubisoft-green);
+}
+
+/* --------------------------------- Sidebar -------------------------------- */
+.layoutExampleSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #151515;
+  padding: 0 12px;
+}
+
+.layoutExampleSidebar > div {
+  width: 100%;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.layoutExampleSidebar > div.layoutExampleSidebarOptionSelected {
+  background-color: #232323;
+  border-radius: 15px;
+  color: var(--color-nubisoft-green);
+}
+
+.layoutExampleMain.selectedLayoutPart::before {
+  background-color: var(--color-nubisoft-blue);
+}
+
+
+/* ------------------------------- Main Header ------------------------------ */
+.layoutExampleMainHeader {
+  display: flex;
+  border-bottom: 1px solid #343434;
+  margin: 12px 18px;
+  margin-top: 48px;
+  padding-bottom: 8px;
+}
+
+.layoutExampleMainHeaderOption {
+  margin-right: 24px;
+}
+
+.layoutExampleMainHeaderOptionSelected {
+  color: #e67fff;
+}
+
+/* ------------------------------ List Wrapper ------------------------------ */
+.layoutExampleListWrapper {
+  margin: 0 18px;
+  height: 284px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.layoutExampleListWrapper.selectedLayoutPart::before {
+  background-color: #e67fff;
+}
+
+/* ---------------------------------- List ---------------------------------- */
+.layoutExampleList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.layoutExampleListItem {
+  border: 1px solid #343434;
+  border-radius: 15px;
+  flex: 1;
+  margin: 2px 0;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+/* --------------------------------- Details -------------------------------- */
+.layoutExampleDetails {
+  padding: 12px 18px;
+  border: 1px solid #343434;
+  border-radius: 15px;
+  margin-left: 12px;
+}
+
+.layoutExampleDetails.selectedLayoutPart::before {
+  background-color: #FFFC19;
+}

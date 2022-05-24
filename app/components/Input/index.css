@@ -1,0 +1,10 @@
+.input {
+  background: transparent;
+  color: var(--color-nubisoft-green);
+  font-size: 20px;
+  border: 1px solid #343434;
+  border-radius: 15px;
+  outline: none;
+  padding: 8px 12px;
+  font-weight: 200;
+}

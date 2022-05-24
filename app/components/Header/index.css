@@ -1,0 +1,23 @@
+.header {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.header h1, .header h3 {
+  background: -webkit-linear-gradient(0, var(--color-nubisoft-green), var(--color-nubisoft-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header h1 {
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.header h3 {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 28px;
+}

@@ -1,0 +1,97 @@
+.pathRouteSection, .pageContentWrapper {
+  width: 100%;
+}
+
+.pageContent {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.pageContent h1,
+.pageContent h2,
+.pageContent h3,
+.pageContent h4,
+.pageContent h5,
+.pageContent h6 {
+  width: 100%;
+  border-bottom: 1px solid var(--color-gray-100);
+  margin-bottom: 12px;
+}
+
+.pageContent h2 {
+  font-size: 36px;
+}
+
+.pageContent h3 {
+  font-size: 32px;
+}
+
+.pageContent h4 {
+  font-size: 26px;
+}
+
+.pageContent h5 {
+  font-size: 20px;
+}
+
+.pageContent h6 {
+  font-size: 16px;
+}
+
+.pageSubContent {
+  padding: 48px 24px;
+  padding-bottom: 0;
+}
+
+.pageContent i {
+  font-weight: 200;
+  color: var(--color-nubisoft-green);
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.pageContent p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 16px 0;
+}
+
+.pageContent ul {
+  list-style-type: circle;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.pageContent ul li::marker {
+  color: var(--color-nubisoft-green);
+}
+
+.pageContent ul li {
+  margin-left: 32px;
+}
+
+.pageContent > div {
+  margin-bottom: 32px;
+}
+
+.blueText {
+  color: var(--color-nubisoft-blue);
+}
+
+.greenText {
+  color: var(--color-nubisoft-green);
+}
+
+code {
+  font-family: 'Fira Code';
+}
+
+.comparisonList, .comparisonList li, .comparisonList *, .comparisonList p {
+  font-size: 22px;
+}
+
+.useFetcherButton {
+  display: block;
+  margin: 12px auto;
+}

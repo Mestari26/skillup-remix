@@ -1,0 +1,30 @@
+.loaderPlayer {
+  border: 1px solid var(--color-nubisoft-blue);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 16px 24px;
+}
+
+.loaderPlayerName {
+  font-size: 24px;
+  color: var(--color-nubisoft-green);
+}
+
+.loaderPlayerName span {
+  color: yellow;
+}
+
+.loaderPlayerTeam {
+  color: #e67fff;
+  font-weight: 200;
+}
+
+.routeParamPagesButtons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.routeParamPagesButtons button {
+  margin-right: 16px;
+  width: 80px;
+}
