@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@remix-run/react';
 
 import { redirectExample } from '~/code/vs-campstar';
 import Code from '~/components/Code';

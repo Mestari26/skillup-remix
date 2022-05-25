@@ -4,7 +4,7 @@ import Code from '~/components/Code';
 export default function CatchAndErrorBoundaries(): JSX.Element {
   return (
     <div>
-      <h4>CatchBounday i ErrorBoundary</h4>
+      <h4>CatchBoundary i ErrorBoundary</h4>
       <p>
         Dzięki tym funkcjom, możliwe jest wyświetlenie alternatywego widoku w przypadku wystąpienia
         jakiegoś błędu. Funkcje te możemy zdefiniować dla każdej ścieżki, a w przypadku w jej braku,
